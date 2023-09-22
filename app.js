@@ -6,7 +6,7 @@ let precio;
 let total = 0;
 let cantidad;
 let continuar;
-let ticket = 'nombre     precio      cantidad        subtotal \n';
+let ticket = 'nombre     Marca     precio      cantidad        subtotal \n';
  
 
 
@@ -21,7 +21,7 @@ function cargaProducto() {
 }
 
 function generarDetalle(nombreProducto, precio, cantidad) {
-  let detalle = `${nombreProducto}        ${precio}      ${cantidad}     ${precio*cantidad}\n`;
+  let detalle = `${nombreProducto}      ${Marca}        ${precio}      ${cantidad}     ${precio*cantidad}\n`;
   ticket = ticket + detalle;
 }
 
